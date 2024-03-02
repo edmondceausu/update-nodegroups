@@ -10,7 +10,7 @@ update-nodegroups() {
 
         # skip if there are no node groups
         echo "checking for nodegroups in $cluster"
-        if [[ ${#nodegroups[@]} -eq 0]]; then
+        if [[ ${#nodegroups[@]} -eq 0 ]]; then
             echo "No nodegroups found in cluster $cluster."
             continue
         fi
